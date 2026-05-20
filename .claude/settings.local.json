@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where pdftotext *)",
+      "Bash(pdftotext -layout \"c:/Users/rushi/vscode projects/IB-Questions/400-IB-Questions-Interview-Guide.pdf\" \"c:/Users/rushi/vscode projects/IB-Questions/raw.txt\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(python parser/preprocess.py)"
+    ]
+  }
+}
