@@ -4,7 +4,15 @@
       "Bash(where pdftotext *)",
       "Bash(pdftotext -layout \"c:/Users/rushi/vscode projects/IB-Questions/400-IB-Questions-Interview-Guide.pdf\" \"c:/Users/rushi/vscode projects/IB-Questions/raw.txt\")",
       "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
-      "Bash(python parser/preprocess.py)"
+      "Bash(python parser/preprocess.py)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(node -e \"console.log\\('vite', require\\('vite/package.json'\\).version, '| plugin-react', require\\('@vitejs/plugin-react/package.json'\\).version\\)\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
+      "Bash(curl -s http://localhost:5173/src/data/questions.json -o /dev/null -w \"%{http_code}\")"
     ]
   }
 }
