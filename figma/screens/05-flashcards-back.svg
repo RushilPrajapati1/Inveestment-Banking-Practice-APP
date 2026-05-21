@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="393" height="852" viewBox="0 0 393 852" font-family="-apple-system, 'SF Pro Text', system-ui, sans-serif">
+  <rect width="393" height="852" fill="#FFFFFF"/>
+
+  <g font-size="15" font-weight="600" fill="#1C1C1E">
+    <text x="32" y="38">9:41</text>
+    <text x="320" y="38">5G 􀋂</text>
+  </g>
+
+  <text x="20" y="116" font-size="28" font-weight="700" fill="#1C1C1E">Flashcards</text>
+
+  <g>
+    <rect x="20" y="138" width="353" height="44" rx="10" fill="#F2F2F7"/>
+    <text x="36" y="166" font-size="15" fill="#1C1C1E">Income statement — Basic</text>
+    <text x="356" y="166" font-size="14" fill="#6B6B70" text-anchor="end">⌄</text>
+  </g>
+
+  <g>
+    <rect x="20" y="194" width="353" height="32" rx="8" fill="#E4E4E9"/>
+    <rect x="22" y="196" width="116" height="28" rx="6" fill="#FFFFFF"/>
+    <text x="80" y="215" font-size="13" font-weight="600" fill="#1C1C1E" text-anchor="middle">All</text>
+    <text x="196.5" y="215" font-size="13" fill="#6B6B70" text-anchor="middle">Basic</text>
+    <text x="313" y="215" font-size="13" fill="#6B6B70" text-anchor="middle">Advanced</text>
+  </g>
+
+  <text x="20" y="252" font-size="15" fill="#1C1C1E">Review only</text>
+  <g>
+    <rect x="329" y="238" width="44" height="26" rx="13" fill="#E4E4E9"/>
+    <circle cx="340" cy="251" r="11" fill="#FFFFFF"/>
+  </g>
+
+  <g>
+    <text x="20" y="294" font-size="15" font-weight="600" fill="#6B6B70">3 / 42</text>
+    <text x="373" y="294" font-size="15" fill="#287BEF" text-anchor="end">⤮  Shuffle</text>
+  </g>
+
+  <!-- Flipped card (answer side) - green border = Known -->
+  <g>
+    <rect x="20" y="312" width="353" height="350" rx="18" fill="#F2F2F7" stroke="#34C759" stroke-width="1.5" opacity="1"/>
+
+    <text x="40" y="345" font-size="12" font-weight="600" fill="#6B6B70" letter-spacing="0.5">INCOME STATEMENT</text>
+    <rect x="221" y="332" width="44" height="18" rx="9" fill="#34C75926"/>
+    <text x="243" y="345" font-size="11" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+
+    <!-- Answer body -->
+    <g font-size="15" fill="#1C1C1E">
+      <text x="40" y="383">The three major financial statements are</text>
+      <text x="40" y="403">the Income Statement, Balance Sheet,</text>
+      <text x="40" y="423">and Cash Flow Statement.</text>
+
+      <text x="40" y="461">•</text>
+      <text x="56" y="461">The Income Statement gives the</text>
+      <text x="56" y="481">company's revenue and expenses…</text>
+
+      <text x="40" y="515">•</text>
+      <text x="56" y="515">The Balance Sheet shows the</text>
+      <text x="56" y="535">company's Assets, Liabilities + Equity.</text>
+
+      <text x="40" y="569">•</text>
+      <text x="56" y="569">The Cash Flow Statement begins with</text>
+      <text x="56" y="589">Net Income and shows actual cash.</text>
+
+      <text x="40" y="627">You start with Net Income on the IS,</text>
+      <text x="40" y="647">adjust for non-cash items on the CFS…</text>
+    </g>
+  </g>
+
+  <!-- Actions row -->
+  <g>
+    <rect x="20" y="682" width="56" height="44" rx="10" fill="#FFFFFF" stroke="#E4E4E9"/>
+    <text x="48" y="710" font-size="18" fill="#1C1C1E" text-anchor="middle">‹</text>
+
+    <rect x="84" y="682" width="111" height="44" rx="10" fill="#FFFFFF" stroke="#E4E4E9"/>
+    <text x="139.5" y="710" font-size="14" font-weight="600" fill="#6B6B70" text-anchor="middle">↺  Review</text>
+
+    <!-- Known is active (green tint) -->
+    <rect x="203" y="682" width="111" height="44" rx="10" fill="#34C759"/>
+    <text x="258.5" y="710" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">✓  Known</text>
+
+    <rect x="322" y="682" width="55" height="44" rx="10" fill="#FFFFFF" stroke="#E4E4E9"/>
+    <text x="349.5" y="710" font-size="18" fill="#1C1C1E" text-anchor="middle">›</text>
+  </g>
+
+  <!-- Tab bar -->
+  <g>
+    <rect x="0" y="769" width="393" height="83" fill="#F8F8FA"/>
+    <line x1="0" y1="769" x2="393" y2="769" stroke="#E4E4E9"/>
+    <text x="65" y="800" font-size="22" text-anchor="middle" opacity="0.55">📚</text>
+    <text x="65" y="822" font-size="10" fill="#6B6B70" text-anchor="middle">Browse</text>
+    <text x="196" y="800" font-size="22" text-anchor="middle">🃏</text>
+    <text x="196" y="822" font-size="10" font-weight="600" fill="#287BEF" text-anchor="middle">Flashcards</text>
+    <text x="327" y="800" font-size="22" text-anchor="middle" opacity="0.55">📊</text>
+    <text x="327" y="822" font-size="10" fill="#6B6B70" text-anchor="middle">Progress</text>
+    <rect x="130" y="842" width="134" height="5" rx="2.5" fill="#1C1C1E"/>
+  </g>
+</svg>

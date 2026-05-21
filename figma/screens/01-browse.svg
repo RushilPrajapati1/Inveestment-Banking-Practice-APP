@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="393" height="852" viewBox="0 0 393 852" font-family="-apple-system, 'SF Pro Text', system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="393" height="852" fill="#F2F2F7"/>
+
+  <!-- Status bar -->
+  <g font-size="15" font-weight="600" fill="#1C1C1E">
+    <text x="32" y="38">9:41</text>
+    <text x="320" y="38">5G 􀋂</text>
+  </g>
+
+  <!-- Large title -->
+  <text x="20" y="116" font-size="28" font-weight="700" fill="#1C1C1E">400 IB Questions</text>
+
+  <!-- Search bar -->
+  <g>
+    <rect x="20" y="138" width="353" height="36" rx="10" fill="#E4E4E9"/>
+    <text x="38" y="161" font-size="15" fill="#6B6B70">🔎  Search questions</text>
+  </g>
+
+  <!-- Quick access group -->
+  <g>
+    <rect x="20" y="190" width="353" height="100" rx="14" fill="#FFFFFF"/>
+    <line x1="56" y1="240" x2="373" y2="240" stroke="#E4E4E9"/>
+    <text x="36" y="220" font-size="17" fill="#1C1C1E">📥  All questions</text>
+    <text x="345" y="220" font-size="15" fill="#6B6B70" text-anchor="end">400  ›</text>
+    <text x="36" y="270" font-size="17" fill="#1C1C1E">↺  Review</text>
+    <text x="345" y="270" font-size="15" fill="#6B6B70" text-anchor="end">12  ›</text>
+  </g>
+
+  <!-- Group: Fit -->
+  <text x="36" y="316" font-size="12" font-weight="600" fill="#6B6B70" letter-spacing="0.5">FIT</text>
+  <g>
+    <rect x="20" y="326" width="353" height="100" rx="14" fill="#FFFFFF"/>
+    <line x1="36" y1="376" x2="373" y2="376" stroke="#E4E4E9"/>
+    <text x="36" y="356" font-size="17" fill="#1C1C1E">Analytical / Attention to Detail</text>
+    <text x="345" y="356" font-size="15" fill="#6B6B70" text-anchor="end">3/9  ›</text>
+    <text x="36" y="406" font-size="17" fill="#1C1C1E">Communication</text>
+    <text x="345" y="406" font-size="15" fill="#6B6B70" text-anchor="end">1/8  ›</text>
+  </g>
+
+  <!-- Group: Accounting -->
+  <text x="36" y="452" font-size="12" font-weight="600" fill="#6B6B70" letter-spacing="0.5">ACCOUNTING</text>
+  <g>
+    <rect x="20" y="462" width="353" height="150" rx="14" fill="#FFFFFF"/>
+    <line x1="36" y1="512" x2="373" y2="512" stroke="#E4E4E9"/>
+    <line x1="36" y1="562" x2="373" y2="562" stroke="#E4E4E9"/>
+    <text x="36" y="492" font-size="17" fill="#1C1C1E">Income statement</text>
+    <rect x="183" y="478" width="44" height="18" rx="9" fill="#34C75926"/>
+    <text x="205" y="491" font-size="11" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+    <text x="345" y="492" font-size="15" fill="#6B6B70" text-anchor="end">2/7  ›</text>
+
+    <text x="36" y="542" font-size="17" fill="#1C1C1E">Three statements</text>
+    <rect x="187" y="528" width="62" height="18" rx="9" fill="#FF8A1A2E"/>
+    <text x="218" y="541" font-size="11" font-weight="600" fill="#FF8A1A" text-anchor="middle">ADVANCED</text>
+    <text x="345" y="542" font-size="15" fill="#6B6B70" text-anchor="end">0/6  ›</text>
+
+    <text x="36" y="592" font-size="17" fill="#1C1C1E">Working capital</text>
+    <text x="345" y="592" font-size="15" fill="#6B6B70" text-anchor="end">1/4  ›</text>
+  </g>
+
+  <!-- Group: Valuation -->
+  <text x="36" y="638" font-size="12" font-weight="600" fill="#6B6B70" letter-spacing="0.5">VALUATION</text>
+  <g>
+    <rect x="20" y="648" width="353" height="100" rx="14" fill="#FFFFFF"/>
+    <line x1="36" y1="698" x2="373" y2="698" stroke="#E4E4E9"/>
+    <text x="36" y="678" font-size="17" fill="#1C1C1E">DCF</text>
+    <rect x="68" y="664" width="44" height="18" rx="9" fill="#34C75926"/>
+    <text x="90" y="677" font-size="11" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+    <text x="345" y="678" font-size="15" fill="#6B6B70" text-anchor="end">0/12 ›</text>
+
+    <text x="36" y="728" font-size="17" fill="#1C1C1E">Comparable companies</text>
+    <text x="345" y="728" font-size="15" fill="#6B6B70" text-anchor="end">0/9  ›</text>
+  </g>
+
+  <!-- Tab bar -->
+  <g>
+    <rect x="0" y="769" width="393" height="83" fill="#F8F8FA"/>
+    <line x1="0" y1="769" x2="393" y2="769" stroke="#E4E4E9"/>
+
+    <!-- Browse (active) -->
+    <text x="65" y="800" font-size="22" text-anchor="middle">📚</text>
+    <text x="65" y="822" font-size="10" font-weight="600" fill="#287BEF" text-anchor="middle">Browse</text>
+
+    <!-- Flashcards -->
+    <text x="196" y="800" font-size="22" text-anchor="middle" opacity="0.55">🃏</text>
+    <text x="196" y="822" font-size="10" fill="#6B6B70" text-anchor="middle">Flashcards</text>
+
+    <!-- Progress -->
+    <text x="327" y="800" font-size="22" text-anchor="middle" opacity="0.55">📊</text>
+    <text x="327" y="822" font-size="10" fill="#6B6B70" text-anchor="middle">Progress</text>
+
+    <!-- Home indicator -->
+    <rect x="130" y="842" width="134" height="5" rx="2.5" fill="#1C1C1E"/>
+  </g>
+</svg>

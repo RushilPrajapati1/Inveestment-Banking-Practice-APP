@@ -1,0 +1,100 @@
+{
+  "$schema": "https://schemas.figma.com/tokens/v1",
+  "meta": {
+    "name": "IBPractice",
+    "platform": "iOS",
+    "device": "iPhone 15 Pro",
+    "canvas": { "width": 393, "height": 852 }
+  },
+
+  "color": {
+    "accent":        { "value": "#287BEF", "description": "Primary action / active tab" },
+    "accentPressed": { "value": "#1F63C2" },
+
+    "status": {
+      "known":  { "value": "#34C759", "description": "Mastered" },
+      "review": { "value": "#FF9F0A", "description": "Needs review" }
+    },
+
+    "difficulty": {
+      "basic":    { "value": "#34C759", "bg": "#34C75926" },
+      "advanced": { "value": "#FF8A1A", "bg": "#FF8A1A2E" }
+    },
+
+    "surface": {
+      "background":        { "value": "#FFFFFF" },
+      "groupedBackground": { "value": "#F2F2F7", "description": "iOS systemGroupedBackground" },
+      "secondary":         { "value": "#F2F2F7" },
+      "card":              { "value": "#FFFFFF" },
+      "bar":               { "value": "#F8F8FA", "description": "Tab bar + action bars" }
+    },
+
+    "text": {
+      "primary":   { "value": "#1C1C1E" },
+      "secondary": { "value": "#6B6B70" },
+      "tertiary":  { "value": "#A0A0A6" },
+      "onAccent":  { "value": "#FFFFFF" }
+    },
+
+    "border": {
+      "subtle":  { "value": "#E4E4E9" },
+      "divider": { "value": "#D1D1D6" }
+    }
+  },
+
+  "spacing": {
+    "0":  { "value": 0 },
+    "1":  { "value": 4 },
+    "2":  { "value": 8 },
+    "3":  { "value": 12 },
+    "4":  { "value": 16 },
+    "5":  { "value": 20 },
+    "6":  { "value": 24 },
+    "8":  { "value": 32 }
+  },
+
+  "radius": {
+    "sm":  { "value": 8 },
+    "md":  { "value": 10, "description": "Buttons, inputs" },
+    "lg":  { "value": 14, "description": "List rows / cells" },
+    "xl":  { "value": 18, "description": "Flashcard, hero cards" },
+    "pill":{ "value": 999 }
+  },
+
+  "type": {
+    "fontFamily": { "value": "SF Pro" },
+    "scale": {
+      "largeTitle": { "size": 34, "weight": 700, "lineHeight": 41 },
+      "title":      { "size": 28, "weight": 700, "lineHeight": 34 },
+      "title3":     { "size": 20, "weight": 600, "lineHeight": 26 },
+      "headline":   { "size": 17, "weight": 600, "lineHeight": 22 },
+      "body":       { "size": 17, "weight": 400, "lineHeight": 22 },
+      "subheadline":{ "size": 15, "weight": 400, "lineHeight": 20 },
+      "footnote":   { "size": 13, "weight": 400, "lineHeight": 18 },
+      "caption":    { "size": 12, "weight": 600, "lineHeight": 16 }
+    }
+  },
+
+  "elevation": {
+    "card":   { "y": 1, "blur": 3,  "color": "#00000010" },
+    "raised": { "y": 4, "blur": 12, "color": "#00000018" }
+  },
+
+  "iconSize": {
+    "sm": { "value": 16 },
+    "md": { "value": 20 },
+    "lg": { "value": 24 }
+  },
+
+  "components": {
+    "tabBar": { "height": 83, "iconSize": 24, "labelSize": 10 },
+    "navBar": { "height": 56, "largeHeight": 96 },
+    "searchBar": { "height": 36, "radius": 10 },
+    "listRow": { "minHeight": 56, "horizontalPadding": 16, "verticalPadding": 12 },
+    "button": {
+      "primary":  { "height": 48, "radius": 10, "bg": "#287BEF", "fg": "#FFFFFF", "weight": 600 },
+      "bordered": { "height": 44, "radius": 10, "border": "#E4E4E9", "fg": "#1C1C1E" }
+    },
+    "card": { "radius": 18, "padding": 18, "border": "#E4E4E9" }
+  }
+}

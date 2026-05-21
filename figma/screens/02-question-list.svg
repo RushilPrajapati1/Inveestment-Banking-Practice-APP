@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="393" height="852" viewBox="0 0 393 852" font-family="-apple-system, 'SF Pro Text', system-ui, sans-serif">
+  <rect width="393" height="852" fill="#F2F2F7"/>
+
+  <!-- Status bar -->
+  <g font-size="15" font-weight="600" fill="#1C1C1E">
+    <text x="32" y="38">9:41</text>
+    <text x="320" y="38">5G 􀋂</text>
+  </g>
+
+  <!-- Inline nav bar -->
+  <g>
+    <rect x="0" y="59" width="393" height="56" fill="#F8F8FA"/>
+    <text x="20" y="93" font-size="17" fill="#287BEF">‹ Back</text>
+    <text x="196.5" y="93" font-size="17" font-weight="600" fill="#1C1C1E" text-anchor="middle">Income statement · Basic</text>
+    <line x1="0" y1="115" x2="393" y2="115" stroke="#E4E4E9"/>
+  </g>
+
+  <!-- Search -->
+  <g>
+    <rect x="20" y="130" width="353" height="36" rx="10" fill="#E4E4E9"/>
+    <text x="38" y="153" font-size="15" fill="#6B6B70">🔎  Search</text>
+  </g>
+
+  <!-- Filter card -->
+  <g>
+    <rect x="20" y="182" width="353" height="116" rx="14" fill="#FFFFFF"/>
+    <text x="36" y="208" font-size="13" font-weight="600" fill="#6B6B70">DIFFICULTY</text>
+
+    <!-- Segmented -->
+    <rect x="36" y="220" width="321" height="32" rx="8" fill="#E4E4E9"/>
+    <rect x="38" y="222" width="105" height="28" rx="6" fill="#FFFFFF"/>
+    <text x="91" y="241" font-size="13" font-weight="600" fill="#1C1C1E" text-anchor="middle">All</text>
+    <text x="196.5" y="241" font-size="13" fill="#6B6B70" text-anchor="middle">Basic</text>
+    <text x="302" y="241" font-size="13" fill="#6B6B70" text-anchor="middle">Advanced</text>
+
+    <line x1="36" y1="264" x2="357" y2="264" stroke="#E4E4E9"/>
+    <text x="36" y="285" font-size="15" fill="#1C1C1E">Review only</text>
+    <!-- Toggle off -->
+    <rect x="313" y="271" width="44" height="26" rx="13" fill="#E4E4E9"/>
+    <circle cx="324" cy="284" r="11" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Section header -->
+  <text x="36" y="324" font-size="12" font-weight="600" fill="#6B6B70" letter-spacing="0.5">7 QUESTIONS</text>
+
+  <!-- List card -->
+  <g>
+    <rect x="20" y="334" width="353" height="350" rx="14" fill="#FFFFFF"/>
+
+    <!-- Row 1: Known -->
+    <line x1="36" y1="404" x2="373" y2="404" stroke="#E4E4E9"/>
+    <circle cx="36" cy="362" r="4" fill="#34C759"/>
+    <text x="52" y="362" font-size="16" fill="#1C1C1E">Walk me through the three financial</text>
+    <text x="52" y="380" font-size="16" fill="#1C1C1E">statements.</text>
+    <text x="52" y="395" font-size="12" fill="#6B6B70">Income statement</text>
+    <rect x="167" y="384" width="44" height="16" rx="8" fill="#34C75926"/>
+    <text x="189" y="395" font-size="10" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+    <text x="357" y="380" font-size="15" fill="#A0A0A6" text-anchor="end">›</text>
+
+    <!-- Row 2: unset -->
+    <line x1="36" y1="474" x2="373" y2="474" stroke="#E4E4E9"/>
+    <circle cx="36" cy="432" r="4" fill="none" stroke="#A0A0A6"/>
+    <text x="52" y="432" font-size="16" fill="#1C1C1E">What is working capital? How is it</text>
+    <text x="52" y="450" font-size="16" fill="#1C1C1E">used?</text>
+    <text x="52" y="465" font-size="12" fill="#6B6B70">Income statement</text>
+    <rect x="167" y="454" width="44" height="16" rx="8" fill="#34C75926"/>
+    <text x="189" y="465" font-size="10" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+    <text x="357" y="450" font-size="15" fill="#A0A0A6" text-anchor="end">›</text>
+
+    <!-- Row 3: Review -->
+    <line x1="36" y1="544" x2="373" y2="544" stroke="#E4E4E9"/>
+    <circle cx="36" cy="502" r="4" fill="#FF9F0A"/>
+    <text x="52" y="502" font-size="16" fill="#1C1C1E">How does $10 of depreciation flow</text>
+    <text x="52" y="520" font-size="16" fill="#1C1C1E">through the three statements?</text>
+    <text x="52" y="535" font-size="12" fill="#6B6B70">Income statement</text>
+    <rect x="167" y="524" width="44" height="16" rx="8" fill="#34C75926"/>
+    <text x="189" y="535" font-size="10" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+    <text x="357" y="520" font-size="15" fill="#A0A0A6" text-anchor="end">›</text>
+
+    <!-- Row 4: Known -->
+    <line x1="36" y1="614" x2="373" y2="614" stroke="#E4E4E9"/>
+    <circle cx="36" cy="572" r="4" fill="#34C759"/>
+    <text x="52" y="572" font-size="16" fill="#1C1C1E">If Depreciation is a non-cash expense,</text>
+    <text x="52" y="590" font-size="16" fill="#1C1C1E">why does it affect cash?</text>
+    <text x="52" y="605" font-size="12" fill="#6B6B70">Income statement</text>
+    <rect x="167" y="594" width="44" height="16" rx="8" fill="#34C75926"/>
+    <text x="189" y="605" font-size="10" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+    <text x="357" y="590" font-size="15" fill="#A0A0A6" text-anchor="end">›</text>
+
+    <!-- Row 5: unset -->
+    <circle cx="36" cy="642" r="4" fill="none" stroke="#A0A0A6"/>
+    <text x="52" y="642" font-size="16" fill="#1C1C1E">Where does Depreciation usually</text>
+    <text x="52" y="660" font-size="16" fill="#1C1C1E">show up on the Income Statement?</text>
+    <text x="52" y="675" font-size="12" fill="#6B6B70">Income statement</text>
+    <rect x="167" y="664" width="44" height="16" rx="8" fill="#34C75926"/>
+    <text x="189" y="675" font-size="10" font-weight="600" fill="#34C759" text-anchor="middle">BASIC</text>
+    <text x="357" y="660" font-size="15" fill="#A0A0A6" text-anchor="end">›</text>
+  </g>
+
+  <!-- Tab bar -->
+  <g>
+    <rect x="0" y="769" width="393" height="83" fill="#F8F8FA"/>
+    <line x1="0" y1="769" x2="393" y2="769" stroke="#E4E4E9"/>
+    <text x="65" y="800" font-size="22" text-anchor="middle">📚</text>
+    <text x="65" y="822" font-size="10" font-weight="600" fill="#287BEF" text-anchor="middle">Browse</text>
+    <text x="196" y="800" font-size="22" text-anchor="middle" opacity="0.55">🃏</text>
+    <text x="196" y="822" font-size="10" fill="#6B6B70" text-anchor="middle">Flashcards</text>
+    <text x="327" y="800" font-size="22" text-anchor="middle" opacity="0.55">📊</text>
+    <text x="327" y="822" font-size="10" fill="#6B6B70" text-anchor="middle">Progress</text>
+    <rect x="130" y="842" width="134" height="5" rx="2.5" fill="#1C1C1E"/>
+  </g>
+</svg>

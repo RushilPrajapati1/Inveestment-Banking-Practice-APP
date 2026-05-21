@@ -16,7 +16,10 @@
       "Bash(xcodebuild -version)",
       "Bash(xcodebuild -project IBPractice.xcodeproj -scheme IBPractice -list)",
       "Bash(xcodebuild -project IBPractice.xcodeproj -scheme IBPractice -destination 'generic/platform=iOS Simulator' -configuration Debug build CODE_SIGNING_ALLOWED=NO)",
-      "Bash(xcodebuild -project /Users/rushi/Desktop/Inveestment-Banking-Practice-APP/ios/IBPractice.xcodeproj -scheme IBPractice -destination 'generic/platform=iOS Simulator' -configuration Debug build CODE_SIGNING_ALLOWED=NO)"
+      "Bash(xcodebuild -project /Users/rushi/Desktop/Inveestment-Banking-Practice-APP/ios/IBPractice.xcodeproj -scheme IBPractice -destination 'generic/platform=iOS Simulator' -configuration Debug build CODE_SIGNING_ALLOWED=NO)",
+      "Bash(swift tools/generate_icon.swift light  ios/IBPractice/Assets.xcassets/AppIcon.appiconset/icon-light.png)",
+      "Bash(swift tools/generate_icon.swift dark ios/IBPractice/Assets.xcassets/AppIcon.appiconset/icon-dark.png)",
+      "Bash(swift tools/generate_icon.swift tinted ios/IBPractice/Assets.xcassets/AppIcon.appiconset/icon-tinted.png)"
     ]
   }
 }

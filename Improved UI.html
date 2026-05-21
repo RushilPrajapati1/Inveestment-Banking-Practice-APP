@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IB Practice — Improved UI</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  html, body { margin: 0; padding: 0; background: #efece5; min-height: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    color: #161E2E;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+
+  /* fade animation used by flashcards */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="icons.jsx"></script>
+<script type="text/babel" src="ledger.jsx"></script>
+<script type="text/babel" src="vault.jsx"></script>
+
+<script type="text/babel">
+const { useState } = React;
+
+// Phone — wraps a screen in the iOS device frame at the source dimensions (393×852).
+function Phone({ children, dark = false }) {
+  return (
+    <IOSDevice width={393} height={852} dark={dark}>
+      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+        {children}
+      </div>
+    </IOSDevice>
+  );
+}
+
+const SCREENS = [
+  {
+    id: 'browse',  title: '01 · Browse',
+    subtitle: 'Catalog landing — pick up where you left off, drill by section.',
+    A: <LedgerBrowse />,   B: <VaultBrowse />,   darkB: true,
+  },
+  {
+    id: 'list',    title: '02 · Question list',
+    subtitle: 'All questions in one topic, filterable by difficulty.',
+    A: <LedgerList />,     B: <VaultList />,     darkB: true,
+  },
+  {
+    id: 'detail',  title: '03 · Question detail',
+    subtitle: 'A single question with its model answer.',
+    A: <LedgerDetail />,   B: <VaultDetail />,   darkB: true,
+  },
+  {
+    id: 'front',   title: '04 · Flashcard — question',
+    subtitle: 'Tap the card to reveal the answer.',
+    A: <LedgerCardFront />, B: <VaultCardFront />, darkB: true,
+  },
+  {
+    id: 'back',    title: '05 · Flashcard — answer',
+    subtitle: 'Same card, answer revealed by quiet cross-fade.',
+    A: <LedgerCardBack />, B: <VaultCardBack />,  darkB: true,
+  },
+  {
+    id: 'progress',title: '06 · Progress',
+    subtitle: 'Activity heatmap + mastery rings + section breakdown.',
+    A: <LedgerProgress />, B: <VaultProgress />,  darkB: true,
+  },
+];
+
+function App() {
+  return (
+    <DesignCanvas>
+      {/* Intro section */}
+      <DCSection id="intro" title="IB Practice · improved UI"
+        subtitle="Two directions across all six screens — pick screens out, mix freely, or open any artboard full-screen.">
+        <DCArtboard id="a-key" label="A · Ledger" width={420} height={210}>
+          <DirectionCard kind="ledger" />
+        </DCArtboard>
+        <DCArtboard id="b-key" label="B · Vault" width={420} height={210}>
+          <DirectionCard kind="vault" />
+        </DCArtboard>
+      </DCSection>
+
+      {SCREENS.map(s => (
+        <DCSection key={s.id} id={s.id} title={s.title} subtitle={s.subtitle}>
+          <DCArtboard id={s.id + '-a'} label="A · Ledger" width={393} height={852}>
+            <Phone>{s.A}</Phone>
+          </DCArtboard>
+          <DCArtboard id={s.id + '-b'} label="B · Vault" width={393} height={852}>
+            <Phone dark={s.darkB}>{s.B}</Phone>
+          </DCArtboard>
+        </DCSection>
+      ))}
+    </DesignCanvas>
+  );
+}
+
+function DirectionCard({ kind }) {
+  if (kind === 'ledger') {
+    return (
+      <div style={{
+        width: '100%', height: '100%', background: '#F2EBDB', borderRadius: 8,
+        border: '1px solid #D9CFB7',
+        padding: '20px 22px', display: 'flex', flexDirection: 'column',
+        position: 'relative', overflow: 'hidden',
+      }}>
+        <div style={{
+          fontFamily: '"JetBrains Mono", monospace', fontSize: 11,
+          letterSpacing: '0.2em', color: '#8E6B1F', fontWeight: 500,
+        }}>DIRECTION A</div>
+        <div style={{
+          fontFamily: '"Source Serif 4", Georgia, serif', fontSize: 38, fontWeight: 600,
+          letterSpacing: '-0.02em', lineHeight: 1, marginTop: 4, color: '#161E2E',
+        }}>Ledger</div>
+        <div style={{ fontSize: 13, color: '#5A5345', marginTop: 8, lineHeight: 1.4, maxWidth: 320 }}>
+          Editorial paper-and-ink finance — cream paper, deep navy ink, gold rules. Restrained, library-quiet.
+        </div>
+        <div style={{ marginTop: 'auto', display: 'flex', gap: 6, alignItems: 'center' }}>
+          {['#F2EBDB','#FBF7EC','#161E2E','#8E6B1F','#3F6B3A','#A85B22'].map(c => (
+            <div key={c} style={{ width: 22, height: 22, background: c, border: '1px solid #D9CFB7' }} />
+          ))}
+          <div style={{ marginLeft: 12, fontSize: 11, color: '#5A5345',
+            fontFamily: '"JetBrains Mono", monospace', letterSpacing: '0.04em' }}>
+            Source Serif 4 · Inter · JetBrains Mono
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div style={{
+      width: '100%', height: '100%',
+      background: 'linear-gradient(165deg, #172A45, #0A1426)',
+      borderRadius: 8, border: '1px solid rgba(255,255,255,0.10)',
+      padding: '20px 22px', display: 'flex', flexDirection: 'column',
+      position: 'relative', overflow: 'hidden',
+    }}>
+      <div style={{ position: 'absolute', top: -40, right: -40, width: 200, height: 200,
+        background: 'radial-gradient(circle, rgba(212,172,75,0.18), transparent 60%)' }} />
+      <div style={{
+        fontFamily: '"JetBrains Mono", monospace', fontSize: 11,
+        letterSpacing: '0.2em', color: '#D4AC4B', fontWeight: 500,
+      }}>DIRECTION B</div>
+      <div style={{
+        fontFamily: 'Inter, system-ui, sans-serif', fontSize: 40, fontWeight: 700,
+        letterSpacing: '-0.03em', lineHeight: 1, marginTop: 4, color: '#FFF8E3',
+      }}>Vault</div>
+      <div style={{ fontSize: 13, color: '#8DA0BF', marginTop: 8, lineHeight: 1.4, maxWidth: 320 }}>
+        Confident dark fintech — deep navy, ivory, gold accent. Sober, premium, data-forward.
+      </div>
+      <div style={{ marginTop: 'auto', display: 'flex', gap: 6, alignItems: 'center' }}>
+        {['#0A1426','#13223A','#ECE6D2','#D4AC4B','#5BBE83','#E3A24B'].map(c => (
+          <div key={c} style={{ width: 22, height: 22, background: c, border: '1px solid rgba(255,255,255,0.12)' }} />
+        ))}
+        <div style={{ marginLeft: 12, fontSize: 11, color: '#8DA0BF',
+          fontFamily: '"JetBrains Mono", monospace', letterSpacing: '0.04em' }}>
+          Inter · Source Serif 4 · JetBrains Mono
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+
+</body>
+</html>
